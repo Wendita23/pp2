@@ -1,0 +1,169 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+body {
+    box-sizing: border-box;
+}
+@media screen and (max-width: 1080px)
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 90%; /* Adjust this value as needed */
+    margin: 0 auto;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333333e8;
+    width: 100%;
+    height: 30px;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.section-bio {
+    background: linear-gradient(180deg, #FFFFFF 0%, #440304 50%, #01012d 100%);
+    width: 100%;
+}
+/*Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+#bio-header {
+    color: #464444;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: larger;
+    line-height: 2.5;
+}
+
+.section-bio .column img {
+    width: 100%;
+    margin-left: 0;
+}
+
+.section-bio .column p {
+    color: #cccccc;
+    font-style: italic;
+    margin-left: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Additional CSS for section-portfolio */
+#section-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the start of the cross axis */
+}
+
+#section-portfolio .column {
+    flex: 0 0 calc(33.33% - 20px); /* Distribute columns equally with some spacing */
+    margin: 10px; /* Add margin around each column */
+    box-sizing: border-box;
+}
+
+#section-portfolio img {
+    width: 100%; /* Make images fill the column width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Style for the images */
+#section-portfolio img {
+    width: calc(33.33% - 20px); /* Set the width of each image to occupy one-third of the container width with some spacing */
+    margin: 10px; /* Add margin around each image */
+    box-sizing: border-box; /* Include padding in the width of the images */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #section-portfolio img {
+        width: calc(50% - 20px); /* Set the width of each image to occupy half of the container width with some spacing on smaller screens */
+    }
+}
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.section-contact {
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgb(10, 10, 10);
+    color: #f7f4f4;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+
+}
